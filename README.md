@@ -28,7 +28,11 @@
 ### 首先进入nodejs里安装typescript
 
 ```
+
+@Override
+
 npm install -g typescript
+
 ```
 ### 创建tsconfig.json文件
 
