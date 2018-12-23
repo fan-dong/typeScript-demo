@@ -38,7 +38,6 @@ tsc --init
 ### 打开tsconfig.json文件修改和删除相应配置（如果想快速修改配置，请复制下列配置）
 
 ```
-@Override
 {
   "compilerOptions": {
    "target": "es5",
@@ -49,4 +48,23 @@ tsc --init
    "outDir": "src/js"//你要生成js的目录
   }
 }
+```
+### 创建src目录，打开vscode新建文件，保存到src下扩展名为.html的文件，然后在编辑器里代码区输入此快捷方法，快速创建html布局代码
+
+```
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="js/test.js"></script><!--自行添加js引入-->
+</head>
+<body>
+     
+     
+</body>
+</html>
+`
 ```
