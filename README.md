@@ -25,17 +25,17 @@
 ```
 ## VScode 自动编译TypeScript的方式
  
-### 首先进入nodejs里安装typescript
+### 1、进入nodejs里安装typescript
 
 ```
 npm install -g typescript
 ```
-### 创建tsconfig.json文件
+### 2、创建tsconfig.json文件
 
 ```
 tsc --init
 ```
-### 打开tsconfig.json文件修改和删除相应配置（如果想快速修改配置，请复制下列配置）
+### 3、打开tsconfig.json文件修改和删除相应配置（如果想快速修改配置，请复制下列配置）
 
 ```
 {
@@ -49,8 +49,7 @@ tsc --init
   }
 }
 ```
-### 创建src目录，打开vscode新建文件，保存到src下扩展名为.html的文件，然后在编辑器里代码区输入此快捷方法，快速创建html布局代码
-
+### 4、创建src目录，新建文件test.html,并引入js文件
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -64,4 +63,32 @@ tsc --init
 <body>
 </body>
 </html>
+```
+### 5.创建ts文件夹，然后新建ts为扩展名的ts文件(test.ts)，测试代码如下：
+
+```
+class Student {
+    firstName : string;
+    lastName : string;
+ 
+    constructor(fiestName : string,  lastName : string) {
+        this.firstName = fiestName;
+        this.lastName = lastName;
+    }
+    greeter() {
+        return `Hello,您好${this.firstName}${this.lastName}`;
+    }
+}
+var user = new Student("王","小明");
+var ele = document.body || document.documentElement;
+ele.innerHTML = user.greeter();
+
+```
+
+### 6.点击菜单栏 终端-任务-运行任务，点击 tsc:构建-tsconfig.json
+
+### 7.此时src目录下会自动生成js/test.js文件了；打开test.js文件，点击编辑器的拆分编辑器菜单，即把js和ts文件拆开，自行编辑ts文件的时候，右侧会自动生成js代码
+
+```
+（如果此时不会自动生成js代码，点击菜单 任务-运行任务 点击 tsc:监视-tsconfig.json 然后就同步了）
 ```
