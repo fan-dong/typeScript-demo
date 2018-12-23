@@ -92,3 +92,5 @@ ele.innerHTML = user.greeter();
 ```
 （如果此时不会自动生成js代码，点击菜单 任务-运行任务 点击 tsc:监视-tsconfig.json 然后就同步了）
 ```
+## 代码结构示意图
+![示意图](img/eg.png)
