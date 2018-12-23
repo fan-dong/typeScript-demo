@@ -35,4 +35,18 @@ npm install -g typescript
 ```
 tsc --init
 ```
+### 打开tsconfig.json文件修改和删除相应配置（如果想快速修改配置，请复制下列配置）
 
+```
+@Override
+{
+  "compilerOptions": {
+   "target": "es5",
+   "noImplicitAny": false,
+   "module": "amd",
+   "removeComments": false,
+   "sourceMap": false,
+   "outDir": "src/js"//你要生成js的目录
+  }
+}
+```
