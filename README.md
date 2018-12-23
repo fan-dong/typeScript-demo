@@ -1,7 +1,7 @@
 
 # TypeScript
 
->TypeScript 学西demo
+>TypeScript 学习demo
 
 ## 什么是TypeScript？
 
@@ -27,8 +27,9 @@
  
 ### 首先进入nodejs里安装typescript
 
-`npm install -g typescript`
-
+```
+npm install -g typescript
+```
 ### 创建tsconfig.json文件
 
 > tsc --init
